@@ -5,7 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-import {secondScreen,StartScreen,PopularMovies} from '../screens/index';
+import {Profile,StartScreen,PopularMovies} from '../screens/index';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -40,7 +40,7 @@ function TabNavigator() {
         />
         <Tab.Screen
           name="Profile"
-          component={secondScreen}
+          component={Profile}
         />
       </Tab.Navigator>
   );

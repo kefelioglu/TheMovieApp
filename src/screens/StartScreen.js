@@ -8,7 +8,6 @@ import Logo from '../components/Logo'
 import Header from '../components/Header'
 import Button from '../components/Button'
 import Paragraph from '../components/Paragraph'
-import WarningAlert from '../components/WarningAlert'
 
 class StartScreen extends React.Component {
   constructor(props) {
@@ -18,6 +17,10 @@ class StartScreen extends React.Component {
     };
     this.isAttempting = false;
   } 
+  login(){
+    this.props.getPopularMovies() 
+    this.props.navigation.navigate('LoginScreen')
+  }
    
   render(){
     return (
@@ -29,7 +32,7 @@ class StartScreen extends React.Component {
               </Paragraph>
               <Button
                   mode="contained"
-                  onPress={()=>this.props.getPopularMovies() & this.props.navigation.navigate('LoginScreen')}>
+                  onPress={()=>this.login()}>
                   Login
               </Button>
       </Background>

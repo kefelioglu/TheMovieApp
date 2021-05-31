@@ -1,10 +1,10 @@
-import secondScreen from './secondScreen'
+import Profile from './Profile'
 import StartScreen from './StartScreen'
 import PopularMovies from './PopularMovies'
 
 
 export {
     StartScreen,
-    secondScreen,
+    Profile,
     PopularMovies
 }
